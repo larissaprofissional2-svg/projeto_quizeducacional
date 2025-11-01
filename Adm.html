@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel do Administrador</title>
+  <link rel="stylesheet" href="Adm.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>🎓 Painel do Administrador</h1>
+    <p style="text-align:center;">Gerencie quizzes e usuários cadastrados no sistema.</p>
+
+    <nav>
+      <ul>
+        <li><a href="#" onclick="mostrarSecao('criarQuiz')">Criar Quiz</a></li>
+        <li><a href="#" onclick="mostrarSecao('usuarios')">Usuários</a></li>
+        <li><a href="index.html">Sair</a></li>
+      </ul>
+    </nav>
+
+    <div id="criarQuiz" class="section active">
+      <h2>🧩 Criar Novo Quiz</h2>
+      <input type="text" id="quizTitulo" placeholder="Título do Quiz">
+      <select id="quizCategoria">
+        <option value="">Selecione a categoria</option>
+        <option value="básico">Básico</option>
+        <option value="intermediário">Intermediário</option>
+        <option value="avançado">Avançado</option>
+      </select>
+      <textarea id="quizDescricao" rows="4" placeholder="Descrição do quiz"></textarea>
+      <button onclick="salvarQuiz()">💾 Salvar Quiz</button>
+
+      <h3>📋 Quizzes Criados</h3>
+      <ul id="listaQuizzes"></ul>
+    </div>
+
+    <div id="usuarios" class="section">
+      <h2>👥 Usuários Cadastrados</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Série</th>
+            <th>Email</th>
+            <th>Pontuação</th>
+          </tr>
+        </thead>
+        <tbody id="tabelaUsuarios">
+          <tr><td colspan="4">Carregando usuários...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer>Quick Quiz © 2025 — Painel Administrativo</footer>
+
+  <script src="Adm.js"></script>
+</body>
+</html>

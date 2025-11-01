@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>QuizInfo - Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">QUIZINFO</header>
+
+  <div class="login-container" id="loginContainer">
+    <h2>Login do Aluno</h2>
+    <input type="text" id="alunoNome" placeholder="Digite seu nome">
+    <button id="entrarBtn">Entrar</button>
+  </div>
+
+  <div class="quiz-container" id="quizContainer">
+    <h2>Bem-vindo, <span id="nomeAluno"></span>!</h2>
+    <div class="score">Pontuação: <span id="pontuacao">0</span></div>
+
+    <button id="jogarBtn">Jogar Agora</button>
+    <button id="rankingBtn">Ranking</button>
+
+    <div class="ranking" id="rankingContainer" style="display:none;">
+      <h3>Ranking</h3>
+      <ol id="rankingList">
+      </ol>
+    </div>
+  </div>
+
+  <script src="AcessoAluno.js"></script>
+</body>
+</html>

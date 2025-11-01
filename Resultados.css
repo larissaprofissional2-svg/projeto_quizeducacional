@@ -1,0 +1,120 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #d1c4e9, #ede7f6);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Topo */
+.topo {
+  background-color: #753b9ce1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo img {
+  height: 100px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #311b92;
+}
+
+/* Conteúdo */
+.conteudo {
+  flex: 1;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  color: #4a148c;
+  margin-bottom: 30px;
+  font-size: 34px;
+  font-family: 'Stencil Std', 'fantasy' ;
+}
+
+/* Pódio */
+.podio {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 40px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.colocacao {
+  background-color: #d1c4e9;
+  border-radius: 15px;
+  width: 180px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.colocacao:hover {
+  transform: scale(1.05);
+}
+
+.colocacao h2 {
+  font-size: 28px;
+  color: #f4faf6;
+}
+
+.colocacao p {
+  margin-top: 8px;
+  color: #efebf3;
+}
+
+/* Altura simulando pódio */
+.primeiro {
+  height: 260px;
+  background-color: #267550;
+  color: white;
+}
+
+.segundo {
+  height: 220px;
+  background-color: #346a83;
+  color: white;
+}
+
+.terceiro {
+  height: 190px;
+  background-color: #972183;
+  color: white;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #050505;
+  text-align: center;
+  padding: 15px;
+  color: rgb(69, 25, 119);
+}

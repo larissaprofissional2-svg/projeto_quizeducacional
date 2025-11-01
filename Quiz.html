@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Educacional</title>
+  <link rel="stylesheet" href="Quiz.css">
+</head>
+<body>
+  <nav class="menu">
+    <div class="menu-logo">
+      <img src="Logotipo Preto e Branco QZF.png" alt="Logo QuizInfo">
+    </div>
+    <ul>
+      <li><a href="Quiz.html">Meus Quizzes</a></li>
+      <li><a href="Resultados.html">Resultados</a></li>
+      <li><a href="Pontuacao.html">Pontuação</a></li>
+      <li><a href="inicio.html">Sair</a></li>
+    </ul>
+  </nav><br><br>
+
+  <div class="container">
+    <h1 class="titulo">Escolha seu nível de estudo</h1><br><br>
+
+    <div class="cards">
+      <div class="card">
+        <div class="logo">
+          <img src="Logo_QZF.png" alt="Logo Quiz Básico">
+        </div>
+        <h2>Básico</h2>
+        <p>Questões introdutórias para começar seu aprendizado.</p>
+        <button onclick="abrirQuiz('quiz_basico.html')">Entrar</button>
+      </div>
+
+      <div class="card">
+        <div class="logo">
+          <img src="Logo_QZF.png" alt="Logo Quiz Intermediário">
+        </div>
+        <h2>Intermediário</h2>
+        <p>Perguntas de nível médio para testar seus conhecimentos.</p>
+        <button onclick="abrirQuiz('quiz.Intermediario.html')">Entrar</button>
+      </div>
+
+      <div class="card">
+        <div class="logo">
+          <img src="Logo_QZF.png" alt="Logo Quiz Avançado">
+        </div>
+        <h2>Avançado</h2>
+        <p>Desafios complexos para quem já domina o assunto.</p>
+        <button onclick="abrirQuiz('quiz.Avancado.html')">Entrar</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="rodape">
+    <p>© 2025 QuizInfo - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="Quiz.js"></script>
+</body>
+</html>
