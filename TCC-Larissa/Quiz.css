@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #dad1d1; 
+  color: #9c63dd;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  background: #753b9ce1;
+  padding: 8px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-logo img {
+  height: 80px;
+  width: auto;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #0a0a0a;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+  color: #d1aefc;
+}
+
+.container {
+  flex: 1;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.titulo {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #43125a;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  width: 280px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.card .logo {
+  margin-bottom: 28px;
+}
+
+.card .logo img {
+  width: 100px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.card h2 {
+  font-size: 1.4rem;
+  color: #6a1b9a;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #030303;
+  margin-bottom: 20px;
+}
+
+.card button {
+  background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.card button:hover {
+  background: linear-gradient(135deg, #8e24aa, #ab47bc);
+  transform: scale(1.05);
+}
+
+.rodape {
+  background: #0a0a0a;
+  color: rgb(165, 60, 197);
+  text-align: center;
+  padding: 19px;
+  margin-top: 168px;
+  font-size: 14px;
+}

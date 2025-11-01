@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>QuizInfo - Login</title>
+  <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+  <div class="inicio-layout">
+
+    <div class="texto-esquerda">
+      <h2>Sejam Bem-Vindos ao Quiz Info</h2>
+      <p>
+        Aqui é onde você pode explorar seus conhecimentos e se tornar um bom profissional.  
+        <br><br>
+        Entra aí e conhece a gente!
+      </p>
+    </div>
+
+    <div class="inicio-container">
+      <div class="logo-box">
+        <img src="Logotipo Preto e Branco QZF.png" alt="Logo QuizInfo" class="logo">
+      </div>
+
+      <form class="login-form">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="Digite seu e-mail" required>
+
+        <label for="tipo">Entrar como:</label>
+        <select id="tipo" name="tipo">
+          <option value="aluno">Aluno</option>
+          <option value="admin">Admin</option>
+        </select>
+
+        <label for="senha">Senha:</label>
+        <div class="senha-box">
+          <input type="password" id="senha" placeholder="Digite sua senha" required>
+          <button type="button" id="mostrarSenha" class="olho">👁</button>
+        </div>
+
+        <button type="button" id="entrarBtn" class="btn">Entrar</button>
+
+        <p class="cadastro-link">
+          Não tenho cadastro - <a href="cadastro.html">clique aqui</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <script src="inicio.js"></script>
+</body>
+</html>

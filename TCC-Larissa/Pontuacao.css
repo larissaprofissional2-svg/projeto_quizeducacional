@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Optima", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #d1c4e9, #ede7f6);
+  display: flex;
+  flex-direction: column;
+  min-height: 102vh;
+}
+
+.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #753b9ce1;
+  padding: 2px 30px;
+}
+
+.logo img {
+  height: 100px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.menu a.ativo {
+  text-decoration: underline;
+}
+
+.conteudo {
+  flex: 1;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  color: #4a148c;
+  margin-bottom: 28px;
+  font-family: 'Stencil Std', 'fantasy';
+}
+
+.pontuacoes-container {
+  display: grid;
+  gap: 18px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  padding: 18px;
+}
+
+.card-pontuacao {
+  background-color: #f3e5f5;
+  border: 2px solid #ce93d8;
+  border-radius: 27px;
+  padding: 25px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.card-pontuacao:hover {
+  transform: scale(1.03);
+}
+
+.card-pontuacao h3 {
+  color: #6d2799;
+  margin-bottom: 10px;
+}
+
+.card-pontuacao p {
+  color: #6d2799;
+  margin: 5px 0;
+}
+
+.card-pontuacao .data {
+  font-size: 12px;
+  color: #561d79;
+}
+
+.btn {
+  background-color: #552c9b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #4b258b;
+}
+
+.rodape {
+  background-color: #0a0a0a;
+  color: #7e57c2;
+  text-align: center;
+  padding: 10px;
+}
+
+.sem-dados {
+  color: #491469;
+  font-style: italic;
+}

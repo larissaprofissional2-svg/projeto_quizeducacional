@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>QUIZINFO BÁSICO</title>
+  <link rel="stylesheet" href="quiz_basico.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>QUIZINFO BÁSICO</h1>
+
+    <div class="box-dados" id="boxDados">
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" placeholder="Digite seu Nome" required>
+
+      <label for="serie">Série / Faculdade / Curso:</label>
+      <input type="text" id="serie" placeholder="Ex: 3º Ano , ADS , Eng.etc" required>
+
+      <button id="iniciar">Iniciar Quiz</button>
+    </div>
+
+    <div id="quiz" class="quiz-container" style="display:none;"></div>
+
+    <div id="resultado" class="resultado" style="display:none;">
+      <h2>Quiz Finalizado!</h2><br>
+      <p>Sua pontuação: <span id="pontuacaoFinal"></span></p><br>
+      <p id="fraseMotivadora"></p><br>
+      <button id="reiniciar">Reiniciar Quiz</button>
+    </div>
+  </div>
+
+  <script src="quiz_basico.js"></script>
+</body>
+</html>

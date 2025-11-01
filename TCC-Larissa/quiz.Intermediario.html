@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>QUIZINFO INTERMEDIÁRIO</title>
+  <link rel="stylesheet" href="quiz.Intermediario.css">
+</head>
+<body>
+  <div class="container">
+    <h1>QUIZINFO INTERMEDIÁRIO</h1>
+
+    <div id="identificacao" class="dados-aluno">
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+      <label for="serie">Série / Curso:</label>
+      <input type="text" id="serie" placeholder="Ex: Seríe , Faculdade , Curso etc." required><br><br>
+
+      <button id="iniciar">Iniciar Quiz</button>
+    </div>
+
+    <div id="quiz-container" class="quiz-container" style="display:none;"></div>
+
+    <div id="resultado" class="resultado" style="display:none;">
+      <h2>Quiz Finalizado!</h2>
+      <p>Sua pontuação: <span id="pontuacaoFinal"></span></p>
+      <button id="reiniciar">Reiniciar Quiz</button>
+    </div>
+  </div>
+
+  <script src="quiz.Intermediario.js"></script>
+</body>
+</html>

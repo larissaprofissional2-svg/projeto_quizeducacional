@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro - QuizInfo</title>
+  <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+  <div class="cadastro-container">
+    <div class="logo-box">
+      <img src="Logo_QZF.png" alt="Logo QuizInfo" class="logo">
+      <h1>Cadastro</h1>
+    </div>
+
+    <form id="cadastroForm">
+      <input type="text" id="nome" placeholder="Nome completo" required>
+      <input type="email" id="email" placeholder="E-mail" required>
+
+      <select id="classe" required>
+        <option value="" disabled selected>Escolha sua classe/série</option>
+        <optgroup label="Ensino Médio">
+          <option value="EM1">1º Ano</option>
+          <option value="EM2">2º Ano</option>
+          <option value="EM3">3º Ano</option>
+        </optgroup>
+        <optgroup label="Técnico de Informática">
+          <option value="T1">1º Módulo</option>
+          <option value="T2">2º Módulo</option>
+          <option value="T3">3º Módulo</option>
+          <option value="T4">4º Módulo</option>
+        </optgroup>
+        <optgroup label="Graduação">
+          <option value="G1">1º Semestre</option>
+          <option value="G2">2º Semestre</option>
+          <option value="G3">3º Semestre</option>
+          <option value="G4">4º Semestre</option>
+          <option value="G5">5º Semestre</option>
+          <option value="G6">6º Semestre</option>
+          <option value="G7">7º Semestre</option>
+          <option value="G8">8º Semestre</option>
+        </optgroup>
+        <optgroup label="Outros">
+          <option value="trabalho">Utilizar no trabalho</option>
+        </optgroup>
+      </select>
+
+      <div class="senha-box">
+        <input type="password" id="senha" placeholder="Senha" required>
+        <span class="mostrar-senha" id="toggleSenha">👁️</span>
+      </div>
+
+      <div class="senha-box">
+        <input type="password" id="confirmarSenha" placeholder="Confirmar senha" required>
+        <span class="mostrar-senha" id="toggleConfirmarSenha">👁️</span>
+      </div>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <p class="link-voltar">Já tem conta? <a href="inicio.html">Entrar</a></p>
+  </div>
+
+  <script src="cadastro.js"></script>
+</body>
+</html>
