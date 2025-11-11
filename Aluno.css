@@ -10,111 +10,107 @@ body {
   color: #222;
 }
 
-h3 {
-  font-family: "Trebuchet MS", sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 1.6;
-  color: #fcfcfc;
-  margin: 20px 0;
-  text-align: justify;
-  background-color: #501961;
-  padding: 15px;
-  border-left: 4px solid #0077cc;
-  border-radius: 5px;
-}
-
-h4 {
-  font-size: 42px;      
-  font-family: 'Noto Sans', sans-serif;  
-  color: #501961;       
-  text-transform: uppercase; 
-  margin-bottom: 30px;  
-  text-align: center;   
-}
-
-.texto-lado {
-  display: flex;
-  align-items: center; 
-  justify-content: space-between;
-  margin: 30px 0;
-  gap: 60px;
-}
-
-.imagem-lado img {
-  max-width: 600px; 
-  height: auto;
-  border-radius: 10px;
-}
-
-.texto-lado h2 {
-  font-family: "Trebuchet MS", sans-serif;
-  font-size: 20px;
-  font-weight: normal;
-  line-height: 1.6;
-  color: #ffffff;
-  text-align: justify;
-  background-color: #501961;
-  padding: 15px;
-  border-left: 4px solid #0077cc;
-  border-radius: 5px;
-  flex: 1; 
-}
-
 .topo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #753b9ce1;
-  padding: 2px 30px;
+  padding: 10px 30px;
+  flex-wrap: wrap;
 }
 
 .logo img {
-  height: 100px;
+  height: 90px;
 }
 
 .menu ul {
   list-style: none;
   display: flex;
-  gap: 30px;       
-  margin: 0;
-  padding: 0;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .menu a {
   text-decoration: none;
-  color: #0a0a0a;
+  color: #0e0d0d;
   font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 8px;
   transition: 0.3s;
 }
 
 .menu a:hover {
-  color: #c7a3ff;
+  background: #c7a3ff;
+  color: #501961;
 }
 
 .conteudo {
   max-width: 1100px;
-  margin: 40px auto;
+  margin: 60px auto;
   text-align: center;
+  padding: 0 20px;
 }
 
 .conteudo h1 {
-  font-size: 32px;
-  color: #050505;
-  margin-bottom: 10px;
-  font-family: 'Stencil Std', 'fantasy';
+  font-size: 34px;
+  color: #0d0d0e;
+  margin-bottom: 20px;
+  font-family: 'Stencil Std', fantasy;
 }
 
-.conteudo p {
+.conteudo h3 {
+  font-family: "Trebuchet MS", sans-serif;
+  background-color: #501961;
+  color: #fcfcfc;
   font-size: 18px;
+  font-weight: normal;
+  line-height: 1.7;
+  text-align: justify;
+  padding: 20px;
+  border-left: 5px solid #c7a3ff;
+  border-radius: 8px;
   margin-bottom: 40px;
-  color: #040005;
+}
+
+.manutencao-section {
+  margin: 40px 0;
+}
+
+.texto-lado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.texto-lado h2 {
+  font-family: "Trebuchet MS", sans-serif;
+  flex: 1;
+  background-color: #501961;
+  color: #ffffff;
+  padding: 20px;
+  border-left: 5px solid #c7a3ff;
+  border-radius: 8px;
+  line-height: 1.6;
+  font-size: 18px;
+  text-align: justify;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagem-lado img {
+  flex: 1;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 35px;
+  margin-top: 40px;
   padding: 0 20px;
 }
 
@@ -154,18 +150,18 @@ h4 {
 }
 
 .btn:hover {
-  background: #501961;
+  background: #6c3384;
 }
 
 .pontuacao {
-  margin: 40px auto;
+  margin: 50px auto;
   max-width: 600px;
-  padding: 20px;
+  padding: 25px;
   background: #fff;
   border-radius: 12px;
   border: 2px solid #c7a3ff;
   display: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .rodape {
@@ -173,6 +169,66 @@ h4 {
   color: rgb(165, 60, 197);
   text-align: center;
   padding: 19px;
-  margin-top: 168px;
+  margin-top: 100px;
   font-size: 14px;
 }
+
+@media screen and (max-width: 900px) {
+  .texto-lado {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .texto-lado h2 {
+    text-align: center;
+  }
+
+  .imagem-lado img {
+    max-width: 90%;
+  }
+
+  .conteudo h1 {
+    font-size: 28px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .menu a {
+    background: #6c3384;
+    width: 100%;
+    text-align: center;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .conteudo h1 {
+    font-size: 24px;
+  }
+
+  .conteudo h3 {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .rodape {
+    font-size: 13px;
+  }
+}
+
+  font-size: 14px;
+}
+
