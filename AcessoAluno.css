@@ -69,3 +69,49 @@ body {
   padding: 10px;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container, .quiz-box, .card, .conteudo {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  button, .btn {
+    width: 100%;
+    font-size: 1em;
+    padding: 12px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.1em;
+  }
+
+  .quiz-box, .container {
+    padding: 8px;
+  }
+
+  button {
+    font-size: 0.9em;
+  }
+}
+
+
